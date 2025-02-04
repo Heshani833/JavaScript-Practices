@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Date and Time</h1>
-    <p id="Time">Click following button to genarate the time.</p>
-    <button
-      type="button"
-      onclick="document.getElementById('Time').innerHTML= Date()"
-    >
-      Disply time
+    <h1>The light bulb JS challenge</h1>
+    <p>
+      Press Turn on to light up the bulb and press Turn off to swich off the
+      bulb
+    </p>
+    <button onclick="document.getElementById('bulb').src='images/bulbOn.jpg'">
+      Turn on
+    </button>
+    <img src="images/bulbOff.jpg" id="bulb" style="width: 200px" />
+    <button onclick="document.getElementById('bulb').src='images/bulbOff.jpg'">
+      Turn off
     </button>
   </body>
 </html>
