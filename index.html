@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Subcribe to my youtube channel</h1>
-    <p id="main">
-      Please hit the following button and Subcribe to SLTravel channel
-    </p>
+    <h1>Date and Time</h1>
+    <p id="Time">Click following button to genarate the time.</p>
     <button
       type="button"
-      onclick='document.getElementById("main").innerHTML="Thanks for subscribing..."'
+      onclick="document.getElementById('Time').innerHTML= Date()"
     >
-      Subscribe
+      Disply time
     </button>
-    <script src="script.js"></script>
   </body>
 </html>
