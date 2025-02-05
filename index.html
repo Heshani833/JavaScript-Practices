@@ -3,24 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barcode</title>
-    <script src="JsBarcode.all.min.js"></script>
+    <title>Document</title>
   </head>
   <body>
-    <h1>Generate Barcode</h1>
     <p>
-      Enter barcode value:
-      <input type="text" id="txt_input" />
+      Enter First Number:
+      <textarea name="" id="fNum" cols="30" rows="1"></textarea>
+      <br />Enter Second Number:
+      <textarea name="" id="sNum" cols="30" rows="1"></textarea>
+      <br /><button onclick="addNumbers()">Add</button>
     </p>
-    <button id="btn_generate">Submit</button>
-    <svg id="barcode"></svg>
-    <script>
-      document
-        .getElementById("btn_generate")
-        .addEventListener("click", function () {
-          let val = document.getElementById("txt_input").value; 
-          JsBarcode("#barcode", val); 
-        });
-    </script>
+    <h3 id="finalAnswer"></h3>
+    <script src="script.js"></script>
   </body>
 </html>

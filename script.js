@@ -1,5 +1,6 @@
-let x = 4;
-console.log(x);
-
-x = 5 + 6;
-console.log(x);
+function addNumbers() {
+  let firNum = Number(document.getElementById("fNum").value);
+  let secNum = Number(document.getElementById("sNum").value);
+  let answer = firNum + secNum;
+  document.getElementById("finalAnswer").innerHTML = "Answer is: " + answer;
+}
