@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Barcode</title>
+    <script src="JsBarcode.all.min.js"></script>
   </head>
   <body>
-    <h1>The light bulb JS challenge</h1>
-    <p id="test">
-      Press Turn on to light up the bulb and press Turn off to swich off the
-      bulb
+    <h1>Generate Barcode</h1>
+    <p>
+      Enter barcode value:
+      <input type="text" id="txt_input" />
     </p>
-    <button onclick="document.getElementById('test').style.fontSize='30px'">
-      Change
-    </button>
+    <button id="btn_generate">Submit</button>
+    <svg id="barcode"></svg>
+    <script>
+      document
+        .getElementById("btn_generate")
+        .addEventListener("click", function () {
+          let val = document.getElementById("txt_input").value; 
+          JsBarcode("#barcode", val); 
+        });
+    </script>
   </body>
 </html>
