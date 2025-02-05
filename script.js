@@ -1,6 +1,10 @@
-function addNumbers() {
-  let firNum = Number(document.getElementById("fNum").value);
-  let secNum = Number(document.getElementById("sNum").value);
-  let answer = firNum + secNum;
-  document.getElementById("finalAnswer").innerHTML = "Answer is: " + answer;
+function main() {
+  alert("Welcome");
 }
+setTimeout(main, 50000);
+
+function color() {
+  document.getElementById("changeColor").style.color = "red";
+}
+
+setTimeout(color, 5000);
