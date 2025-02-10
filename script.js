@@ -1,10 +1,6 @@
-function main() {
-  alert("Welcome");
-}
-setTimeout(main, 50000);
-
-function color() {
-  document.getElementById("changeColor").style.color = "red";
+function main(x, y, z) {
+  return x + y - z;
 }
 
-setTimeout(color, 5000);
+let p = main(2, 5, 1);
+console.log(p);
