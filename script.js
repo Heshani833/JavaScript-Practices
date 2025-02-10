@@ -1,6 +1,9 @@
-function main(x, y, z) {
-  return x + y - z;
-}
+let hours = 27;
 
-let p = main(2, 5, 1);
-console.log(p);
+if (hours <= 12) {
+  console.log("Hello,Good Morning");
+} else if (hours < 24) {
+  console.log("Hello,Good Afternoon");
+} else {
+  console.log("Invalid hours");
+}
