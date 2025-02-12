@@ -1,34 +1,46 @@
-function validation() {
-  let phone = document.getElementById("num").value;
+function fn1() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 0;
+}
+function fn2() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 1;
+}
 
-  let numLength = phone.length;
-  let firstNums = phone.substr(0, 2);
-  let lastNums = phone.substr(numLength - 9, 9);
-  let num;
+function fn3() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 2;
+}
+function fn4() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 3;
+}
 
-  if (phone.length < 9) {
-    alert("Numbers missing please check again.");
-    document.getElementById("msg").innerHTML = "Invalid Number";
-  } else if (phone.length == 9) {
-    alert("Number validation sucessful.");
-    num = "94" + phone;
-    document.getElementById("msg").innerHTML = num;
-  } else if (phone.length == 10) {
-    num = "94" + lastNums;
-    alert("Number validation successful");
-    document.getElementById("msg").innerHTML = num;
-  } else if (numLength > 11) {
-    alert("Invalid number , please check again");
-    document.getElementById("msg").innerHTML = "Invalid number..";
-  } else if (numLength == 11 && firstNums != 94) {
-    alert("Invalid number,please check again ");
-    document.getElementById("msg").innerHTML = "Invalid number..";
-  } else if (numLength == 11 && firstNums == 94) {
-    alert("Number validation sucessful.");
-    num = phone;
-    document.getElementById("msg").innerHTML = num;
-  } else {
-    alert("Invalid number,please check again ");
-    document.getElementById("msg").innerHTML = "Invalid number..";
-  }
+function fn5() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 4;
+}
+
+function fn6() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 5;
+}
+
+function fn7() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 6;
+}
+
+function fn8() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 7;
+}
+
+function fn9() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 8;
+}
+function fn10() {
+  let previous = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = previous + 9;
 }
