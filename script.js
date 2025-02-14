@@ -95,3 +95,8 @@ function fn15() {
     document.getElementById("display").innerHTML = "Invalid";
   }
 }
+
+function f16() {
+  document.getElementById("display").innerHTML = "0";
+  op = 0;
+}
