@@ -44,3 +44,54 @@ function fn10() {
   let previous = document.getElementById("display").innerHTML;
   document.getElementById("display").innerHTML = previous + 9;
 }
+
+function feraser() {
+  let previous = document.getElementById("display").innerHTML;
+  let eraserPre = previous.slice(0, -1);
+  document.getElementById("display").innerHTML = eraserPre;
+}
+
+let op;
+let firstSave;
+function fn11() {
+  firstSave = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = 0;
+  op = 1;
+}
+
+function fn12() {
+  firstSave = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = 0;
+  op = 2;
+}
+
+function fn13() {
+  firstSave = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = 0;
+  op = 3;
+}
+function fn14() {
+  firstSave = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = 0;
+  op = 4;
+}
+
+function fn15() {
+  let SecondSave = document.getElementById("display").innerHTML;
+
+  if (op == 1) {
+    document.getElementById("display").innerHTML =
+      parseInt(firstSave) + parseInt(SecondSave);
+  } else if (op == 2) {
+    document.getElementById("display").innerHTML =
+      parseInt(firstSave) - parseInt(SecondSave);
+  } else if (op == 3) {
+    document.getElementById("display").innerHTML =
+      parseInt(firstSave) * parseInt(SecondSave);
+  } else if (op == 4) {
+    document.getElementById("display").innerHTML =
+      parseInt(firstSave) / parseInt(SecondSave);
+  } else {
+    document.getElementById("display").innerHTML = "Invalid";
+  }
+}
