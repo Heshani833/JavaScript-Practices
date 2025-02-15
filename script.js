@@ -1,12 +1,10 @@
-let student = { firstName: "Heshani", lastName: "Shehana", age: 23 };
-student.firstName = "Sachini";
+let student = {
+  firstName: "Heshani",
+  lastName: "Shehana",
+  age: 23,
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
 
-document.getElementById("main").innerHTML =
-  "Hi, My name is" +
-  " " +
-  student.firstName +
-  " " +
-  student.lastName +
-  ". " +
-  student.age +
-  "years old .";
+console.log(student.fullName());
