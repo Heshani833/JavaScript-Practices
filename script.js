@@ -1,10 +1,14 @@
-let student = {
-  firstName: "Heshani",
-  lastName: "Shehana",
-  age: 23,
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  },
-};
+let a = 2;
+a += 5;
+console.log(a);
 
-console.log(student.fullName());
+let b = "Heshani ";
+b += "Shehana";
+console.log(b);
+
+let z = 2;
+if (z == 2) {
+  console.log("done");
+}
+
+
