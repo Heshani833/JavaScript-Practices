@@ -1,3 +1,12 @@
-document.querySelector("p.test").style.backgroundColor = "blue";
-document.querySelector("#main").innerHTML =
-  "Fruits <ul><li>Apple</li><li>Orange</li></ul>";
+const mainBtn = document.querySelector("#btn");
+
+mainBtn.addEventListener("click", simpleFun);
+document.addEventListener("dblclick", bgfun);
+
+function simpleFun() {
+  alert("Hello.Its working.");
+}
+
+function bgfun() {
+  alert("You are clicked the background.");
+}
